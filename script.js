@@ -28,6 +28,7 @@ const fetchApi = async (cityName) =>{
     const data = await resp.json();
     console.log(data);
     displayInfo(data);
+    displayForecastInfo(data);
 }
 
 const search_btn = document.getElementById('search_btn');
@@ -41,46 +42,74 @@ const getWeather = () =>{
 }
 
 const displayInfo = (data) =>{
-    dWindSpeed(data.current);
-    dHumidity(data.current);
-    dPressure(data.current);
-    dUV(data.current);
-    dCityName(data.location);
-    dCondition(data.current.condition);
-    dTemperature(data);
+    dWindSpeed(data.current,'windSpeed');
+    dHumidity(data.current,'humidity');
+    dPressure(data.current,'pressure');
+    dUV(data.current,'uvIdx');
+    dCityName(data.location,'dCity');
+    dCondition(data.current.condition,'weatherConditionImg','weatherConditionText');
+    dTemperature(data,'dTemp','dMinTemp','dMaxTemp');
 }
 
-const dWindSpeed = (current) =>{
-    const windSpeed = document.getElementById('windSpeed');
+const dWindSpeed = (current,id) =>{
+    const windSpeed = document.getElementById(id);
     windSpeed.innerText = `${current.wind_kph} km/h`;
 }
-const dHumidity = (current) =>{
-    const humidity = document.getElementById("humidity");
+const dHumidity = (current,id) =>{
+    const humidity = document.getElementById(id);
     humidity.innerText = `${current.humidity} %`;
 }
-const dPressure = (current) =>{
-    const pressure = document.getElementById('pressure');
+const dPressure = (current,id) =>{
+    const pressure = document.getElementById(id);
     pressure.innerText = `${current.pressure_mb} mb`;
 }
-const dUV = (current) =>{
-    const uvIdx = document.getElementById('uvIdx');
+const dUV = (current,id) =>{
+    const uvIdx = document.getElementById(id);
     uvIdx.innerText = `${current.uv}`;
 }
-const dCityName = (location) =>{
-    const dCity = document.getElementById('dCity');
+const dCityName = (location,id) =>{
+    const dCity = document.getElementById(id);
     dCity.innerHTML = `${location.name}<br>${location.region},${location.country}`;
 }
-const dCondition = (condition) =>{
-    const weatherConditionImg = document.getElementById('weatherConditionImg');
+const dCondition = (condition,id1,id2) =>{
+    const weatherConditionImg = document.getElementById(id1);
     weatherConditionImg.src = condition.icon;
-    const weatherConditionText = document.getElementById('weatherConditionText');
+    const weatherConditionText = document.getElementById(id2);
     weatherConditionText.innerText = `${condition.text}`;
 }
-const dTemperature = (data) =>{
-    const dTemp = document.getElementById('dTemp');
+const dTemperature = (data,id1,id2,id3) =>{
+    const dTemp = document.getElementById(id1);
     dTemp.innerHTML = `${data.current.temp_c} &#176C`;
-    const dMinTemp = document.getElementById('dMinTemp');
+    const dMinTemp = document.getElementById(id2);
     dMinTemp.innerHTML = `Min-Temp${data.forecast.forecastday[0].day.mintemp_c} &#176C`;
-    const dMaxTemp = document.getElementById('dMaxTemp');
+    const dMaxTemp = document.getElementById(id3);
     dMaxTemp.innerHTML = `Max-Temp${data.forecast.forecastday[0].day.maxtemp_c} &#176C`;
+}
+
+// hour update js
+
+const dTempAndFeel = (current,id1,id2) =>{
+    const dTemp = document.getElementById(id1);
+    dTemp.innerHTML = `${current.temp_c} &#176C`;
+    const feels = document.getElementById(id2);
+    feels.innerHTML = `${current.feelslike_c} &#176C`;
+}
+
+const cardHeading = (condition,id1,id2) =>{
+    const img = document.getElementById(id1);
+    img.src = condition.icon;
+    const text = document.getElementById(id2);
+    text.innerText = condition.text;
+}
+const displayForecastInfo = (data) =>{
+    const hourId = [[0,'00'],[4,'04'],[8,'08'],[12,'12'],[16,'16'],[20,'20']];
+    hourId.forEach((element) =>{
+        cardHeading(data.forecast.forecastday[0].hour[element[0]].condition,`cardHeadImg${element[1]}`,`cardHeadText${element[1]}`);
+        dWindSpeed(data.forecast.forecastday[0].hour[element[0]],`windSpeed${element[1]}`);
+        dHumidity(data.forecast.forecastday[0].hour[element[0]],`humidity${element[1]}`)
+        dPressure(data.forecast.forecastday[0].hour[element[0]],`pressure${element[1]}`)
+        dUV(data.forecast.forecastday[0].hour[element[0]],`uvIdx${element[1]}`)
+        dUV(data.forecast.forecastday[0].hour[element[0]],`uvIdx${element[1]}`)
+        dTempAndFeel(data.forecast.forecastday[0].hour[element[0]],`temp${element[1]}`,`feels${element[1]}`);
+    });
 }
