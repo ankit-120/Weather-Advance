@@ -81,9 +81,9 @@ const dTemperature = (data,id1,id2,id3) =>{
     const dTemp = document.getElementById(id1);
     dTemp.innerHTML = `${data.current.temp_c} &#176C`;
     const dMinTemp = document.getElementById(id2);
-    dMinTemp.innerHTML = `Min-Temp${data.forecast.forecastday[0].day.mintemp_c} &#176C`;
+    dMinTemp.innerHTML = `Min-Temp : ${data.forecast.forecastday[0].day.mintemp_c} &#176C`;
     const dMaxTemp = document.getElementById(id3);
-    dMaxTemp.innerHTML = `Max-Temp${data.forecast.forecastday[0].day.maxtemp_c} &#176C`;
+    dMaxTemp.innerHTML = `Max-Temp : ${data.forecast.forecastday[0].day.maxtemp_c} &#176C`;
 }
 
 // hour update js
