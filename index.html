@@ -125,429 +125,421 @@
                 Hourly Forecast
             </div>
 
-            <!-- div containing hourly forecast and right side information -->
-            <div class="row d-flex">
-               
-                    <!-- 00 hour -->
+            <!-- 00 hour -->
 
-                    <div class="col-lg-8 col-sm-12">
-                        <p>
-                            <button class="btn bg-secondary bg-opacity-10 w-100 " type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseWidth00" aria-expanded="false"
-                                aria-controls="collapseWidth00">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>00:00<img src="//cdn.weatherapi.com/weather/64x64/night/113.png" alt=""
-                                            id="cardHeadImg00"></div>
-                                    <div>
-                                        Click to know more
-                                    </div>
-                                    <div id="cardHeadText00">--</div>
-                                </div>
-                            </button>
-                        </p>
-                        <div class="collapse m-2" id="collapseWidth00">
-                            <div class="card card-body" style="width: 100%;">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p class="text-center">Today Overview</p>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Wind Speed</div>
-                                            <div id="windSpeed00" class="fs-3">0 km/h</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Humidity</div>
-                                            <div id="humidity00" class="fs-3">0 %</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Temperature</div>
-                                            <div id="temp00" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Pressure</div>
-                                            <div id="pressure00" class="fs-3">0 mb</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">UV Index</div>
-                                            <div id="uvIdx00" class="fs-3">0 </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Feels Like</div>
-                                            <div id="feels00" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
+            <div class="col-lg-8 col-sm-12">
+                <p>
+                    <button class="btn bg-secondary bg-opacity-10 w-100 " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidth00" aria-expanded="false" aria-controls="collapseWidth00">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>00:00<img src="//cdn.weatherapi.com/weather/64x64/night/113.png" alt=""
+                                    id="cardHeadImg00"></div>
+                            <div>
+                                Click to know more
+                            </div>
+                            <div id="cardHeadText00">--</div>
+                        </div>
+                    </button>
+                </p>
+                <div class="collapse m-2" id="collapseWidth00">
+                    <div class="card card-body" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-center">Today Overview</p>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Wind Speed</div>
+                                    <div id="windSpeed00" class="fs-3">0 km/h</div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- 04 hour -->
-
-                    <div class="col-lg-8 col-sm-12">
-                        <p class="">
-                            <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseWidth04" aria-expanded="false" aria-controls="collapseWidth04">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>04:00<img src="//cdn.weatherapi.com/weather/64x64/night/113.png" alt=""
-                                            id="cardHeadImg04"></div>
-                                    <div>
-                                        Click to know more
-                                    </div>
-                                    <div id="cardHeadText04">--</div>
-                                </div>
-                            </button>
-                        </p>
-                        <div class="collapse m-2" id="collapseWidth04">
-                            <div class="card card-body" style="width: 100%;">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p class="text-center">Today Overview</p>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Wind Speed</div>
-                                            <div id="windSpeed04" class="fs-3">0 km/h</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Humidity</div>
-                                            <div id="humidity04" class="fs-3">0 %</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Temperature</div>
-                                            <div id="temp04" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Pressure</div>
-                                            <div id="pressure04" class="fs-3">0 mb</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">UV Index</div>
-                                            <div id="uvIdx04" class="fs-3">0 </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Feels Like</div>
-                                            <div id="feels04" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Humidity</div>
+                                    <div id="humidity00" class="fs-3">0 %</div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- 08 hour -->
-
-                    <div class="col-lg-8 col-sm-12">
-                        <p class="">
-                            <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseWidth08" aria-expanded="false" aria-controls="collapseWidth08">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>08:00<img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt=""
-                                            id="cardHeadImg08"></div>
-                                    <div>
-                                        Click to know more
-                                    </div>
-                                    <div id="cardHeadText08">--</div>
-                                </div>
-                            </button>
-                        </p>
-                        <div class="collapse m-2" id="collapseWidth08">
-                            <div class="card card-body" style="width: 100%;">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p class="text-center">Today Overview</p>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Wind Speed</div>
-                                            <div id="windSpeed08" class="fs-3">0 km/h</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Humidity</div>
-                                            <div id="humidity08" class="fs-3">0 %</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Temperature</div>
-                                            <div id="temp08" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Pressure</div>
-                                            <div id="pressure08" class="fs-3">0 mb</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">UV Index</div>
-                                            <div id="uvIdx08" class="fs-3">0 </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Feels Like</div>
-                                            <div id="feels08" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Temperature</div>
+                                    <div id="temp00" class="fs-3">0 C</div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-
-                    <!-- 12 hour -->
-
-                    <div class="col-lg-8 col-sm-12">
-                        <p class="">
-                            <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseWidth12" aria-expanded="false" aria-controls="collapseWidth12">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>12:00<img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt=""
-                                            id="cardHeadImg12"></div>
-                                    <div>
-                                        Click to know more
-                                    </div>
-                                    <div id="cardHeadText12">--</div>
-                                </div>
-                            </button>
-                        </p>
-                        <div class="collapse m-2" id="collapseWidth12">
-                            <div class="card card-body" style="width: 100%;">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p class="text-center">Today Overview</p>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Wind Speed</div>
-                                            <div id="windSpeed12" class="fs-3">0 km/h</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Humidity</div>
-                                            <div id="humidity12" class="fs-3">0 %</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Temperature</div>
-                                            <div id="temp12" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Pressure</div>
-                                            <div id="pressure12" class="fs-3">0 mb</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">UV Index</div>
-                                            <div id="uvIdx12" class="fs-3">0 </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Feels Like</div>
-                                            <div id="feels12" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Pressure</div>
+                                    <div id="pressure00" class="fs-3">0 mb</div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- 16 hour  -->
-
-                    <div class="col-lg-8 col-sm-12">
-                        <p class="">
-                            <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseWidth16" aria-expanded="false" aria-controls="collapseWidth16">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>16:00<img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt=""
-                                            id="cardHeadImg16"></div>
-                                    <div>
-                                        Click to know more
-                                    </div>
-                                    <div id="cardHeadText16">--</div>
-                                </div>
-                            </button>
-                        </p>
-                        <div class="collapse m-2" id="collapseWidth16">
-                            <div class="card card-body" style="width: 100%;">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p class="text-center">Today Overview</p>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Wind Speed</div>
-                                            <div id="windSpeed16" class="fs-3">0 km/h</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Humidity</div>
-                                            <div id="humidity16" class="fs-3">0 %</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Temperature</div>
-                                            <div id="temp16" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Pressure</div>
-                                            <div id="pressure16" class="fs-3">0 mb</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">UV Index</div>
-                                            <div id="uvIdx16" class="fs-3">0 </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Feels Like</div>
-                                            <div id="feels16" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">UV Index</div>
+                                    <div id="uvIdx00" class="fs-3">0 </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- 20 hour  -->
-                    <div class="col-lg-8 col-sm-12">
-                        <p class="">
-                            <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseWidth20" aria-expanded="false" aria-controls="collapseWidth20">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>20:00<img src="//cdn.weatherapi.com/weather/64x64/night/113.png" alt=""
-                                            id="cardHeadImg20"></div>
-                                    <div>
-                                        Click to know more
-                                    </div>
-                                    <div id="cardHeadText20">--</div>
-                                </div>
-                            </button>
-                        </p>
-                        <div class="collapse m-2" id="collapseWidth20">
-                            <div class="card card-body" style="width: 100%;">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <p class="text-center">Today Overview</p>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Wind Speed</div>
-                                            <div id="windSpeed20" class="fs-3">0 km/h</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Humidity</div>
-                                            <div id="humidity20" class="fs-3">0 %</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Temperature</div>
-                                            <div id="temp20" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Pressure</div>
-                                            <div id="pressure20" class="fs-3">0 mb</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">UV Index</div>
-                                            <div id="uvIdx20" class="fs-3">0 </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
-                                        <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
-                                        <div class="m-2">
-                                            <div class="m-1">Feels Like</div>
-                                            <div id="feels20" class="fs-3">0 C</div>
-                                        </div>
-                                    </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Feels Like</div>
+                                    <div id="feels00" class="fs-3">0 C</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- div containing hourly forecast and right side information ends -->
+
+            <!-- 04 hour -->
+
+            <div class="col-lg-8 col-sm-12">
+                <p class="">
+                    <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidth04" aria-expanded="false" aria-controls="collapseWidth04">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>04:00<img src="//cdn.weatherapi.com/weather/64x64/night/113.png" alt=""
+                                    id="cardHeadImg04"></div>
+                            <div>
+                                Click to know more
+                            </div>
+                            <div id="cardHeadText04">--</div>
+                        </div>
+                    </button>
+                </p>
+                <div class="collapse m-2" id="collapseWidth04">
+                    <div class="card card-body" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-center">Today Overview</p>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Wind Speed</div>
+                                    <div id="windSpeed04" class="fs-3">0 km/h</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Humidity</div>
+                                    <div id="humidity04" class="fs-3">0 %</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Temperature</div>
+                                    <div id="temp04" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Pressure</div>
+                                    <div id="pressure04" class="fs-3">0 mb</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">UV Index</div>
+                                    <div id="uvIdx04" class="fs-3">0 </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Feels Like</div>
+                                    <div id="feels04" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 08 hour -->
+
+            <div class="col-lg-8 col-sm-12">
+                <p class="">
+                    <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidth08" aria-expanded="false" aria-controls="collapseWidth08">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>08:00<img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt=""
+                                    id="cardHeadImg08"></div>
+                            <div>
+                                Click to know more
+                            </div>
+                            <div id="cardHeadText08">--</div>
+                        </div>
+                    </button>
+                </p>
+                <div class="collapse m-2" id="collapseWidth08">
+                    <div class="card card-body" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-center">Today Overview</p>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Wind Speed</div>
+                                    <div id="windSpeed08" class="fs-3">0 km/h</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Humidity</div>
+                                    <div id="humidity08" class="fs-3">0 %</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Temperature</div>
+                                    <div id="temp08" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Pressure</div>
+                                    <div id="pressure08" class="fs-3">0 mb</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">UV Index</div>
+                                    <div id="uvIdx08" class="fs-3">0 </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Feels Like</div>
+                                    <div id="feels08" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 12 hour -->
+
+            <div class="col-lg-8 col-sm-12">
+                <p class="">
+                    <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidth12" aria-expanded="false" aria-controls="collapseWidth12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>12:00<img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt=""
+                                    id="cardHeadImg12"></div>
+                            <div>
+                                Click to know more
+                            </div>
+                            <div id="cardHeadText12">--</div>
+                        </div>
+                    </button>
+                </p>
+                <div class="collapse m-2" id="collapseWidth12">
+                    <div class="card card-body" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-center">Today Overview</p>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Wind Speed</div>
+                                    <div id="windSpeed12" class="fs-3">0 km/h</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Humidity</div>
+                                    <div id="humidity12" class="fs-3">0 %</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Temperature</div>
+                                    <div id="temp12" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Pressure</div>
+                                    <div id="pressure12" class="fs-3">0 mb</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">UV Index</div>
+                                    <div id="uvIdx12" class="fs-3">0 </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Feels Like</div>
+                                    <div id="feels12" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16 hour  -->
+
+            <div class="col-lg-8 col-sm-12">
+                <p class="">
+                    <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidth16" aria-expanded="false" aria-controls="collapseWidth16">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>16:00<img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt=""
+                                    id="cardHeadImg16"></div>
+                            <div>
+                                Click to know more
+                            </div>
+                            <div id="cardHeadText16">--</div>
+                        </div>
+                    </button>
+                </p>
+                <div class="collapse m-2" id="collapseWidth16">
+                    <div class="card card-body" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-center">Today Overview</p>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Wind Speed</div>
+                                    <div id="windSpeed16" class="fs-3">0 km/h</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Humidity</div>
+                                    <div id="humidity16" class="fs-3">0 %</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Temperature</div>
+                                    <div id="temp16" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Pressure</div>
+                                    <div id="pressure16" class="fs-3">0 mb</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">UV Index</div>
+                                    <div id="uvIdx16" class="fs-3">0 </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Feels Like</div>
+                                    <div id="feels16" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 20 hour  -->
+            <div class="col-lg-8 col-sm-12">
+                <p class="">
+                    <button class="btn bg-secondary bg-opacity-10 w-100" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidth20" aria-expanded="false" aria-controls="collapseWidth20">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>20:00<img src="//cdn.weatherapi.com/weather/64x64/night/113.png" alt=""
+                                    id="cardHeadImg20"></div>
+                            <div>
+                                Click to know more
+                            </div>
+                            <div id="cardHeadText20">--</div>
+                        </div>
+                    </button>
+                </p>
+                <div class="collapse m-2" id="collapseWidth20">
+                    <div class="card card-body" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-center">Today Overview</p>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-wind text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Wind Speed</div>
+                                    <div id="windSpeed20" class="fs-3">0 km/h</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-moisture text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Humidity</div>
+                                    <div id="humidity20" class="fs-3">0 %</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Temperature</div>
+                                    <div id="temp20" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-speedometer2 fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Pressure</div>
+                                    <div id="pressure20" class="fs-3">0 mb</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-brightness-low text-warning fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">UV Index</div>
+                                    <div id="uvIdx20" class="fs-3">0 </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4  mt-1 d-flex align-items-center">
+                                <div class="m-2"><i class="bi bi-thermometer-low text-primary fs-3"></i></div>
+                                <div class="m-2">
+                                    <div class="m-1">Feels Like</div>
+                                    <div id="feels20" class="fs-3">0 C</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
     </div>
 
 
